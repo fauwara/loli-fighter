@@ -1,0 +1,79 @@
+@font-face{
+    src: url("{{ url_for('static', filename='go3v.ttf') }}");
+    font-family: go3;
+    /* {{ url_for('static/fonts', filename='go3v.ttf') }} */
+}
+
+:root{
+    /* color's  */
+    --clr-primary: #222222;
+    --clr-secondary: #cf0d17;
+    /* --clr-light: #f5f5f5; */
+    --clr-light: #e6e6e6;
+
+    /* font families */
+        /* gang of three */
+    --ff-go3: go3;
+
+    /* font size's */
+    --fs-h1: 3.5rem;
+    --fs-h2: 3rem;
+    --fs-h3: 1.8rem;
+    --fs-nav-logo: 2.1rem;
+    --fs-nav-links: 1.2rem;
+    --fs-body: 1.2rem;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-primary);
+}
+
+h1,h2,h3{
+    font-family: var(--ff-go3);
+}
+
+h1{
+    font-size: var(--fs-h1);
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand{
+    color: var(--clr-light);
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home-button{
+    margin: 5px;
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--clr-secondary);
+    border: var(--clr-secondary) solid 3px;
+    font-family: var(--ff-go3);
+    font-size: var(--fs-h3);
+    cursor: pointer;
+}
+
+.home-button:hover{
+    color: var(--clr-light);
+    background-color: var(--clr-secondary);
+    transition: background-color .4s, color .4s;
+}
