@@ -22,9 +22,6 @@ function loli(loliName, loliCategory, loliClass, hp, attack, defence, speed, mov
     this.loliName = loliName;
     this.loliCategory = loliCategory,
     this.loliClass = loliClass;
-    // this.attack = attack;
-    // this.defence = defence;
-    // this.speed = speed;
     this.stats = {
         hp,
         attack,
@@ -39,6 +36,5 @@ function loli(loliName, loliCategory, loliClass, hp, attack, defence, speed, mov
 
 let ryuAkasuki = new loli('Ryu Akasuki', 'The maid loli', yandere, 2000, 3, 3, 4, [flyingChappal, flyingChappal, flyingChappal, flyingChappal],  'nothing here', './static/images/Ryu Akasuki.jpg' );
 
-// console.log(ryuAkasuki);
 
 let loliList = [ryuAkasuki, ryuAkasuki]
