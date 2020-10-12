@@ -6,5 +6,3 @@ function clickLoliPage(){
         renderCard(loliList,i);
     }
 }
-
-console.log(loliList);
