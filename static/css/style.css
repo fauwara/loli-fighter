@@ -6,7 +6,11 @@
 :root{
     /* color's  */
     --clr-primary: #222222;
+    --clr-primary-transparent: #22222277;
     --clr-secondary: #cf0d17;
+    /* --clr-blue: #273ab6;
+    --clr-green: #18ac3a; */
+    --clr-strong-light: #f5f5f5;
     --clr-light: #e6e6e6;
 
     /* font families */
@@ -17,10 +21,17 @@
     --fs-h1: 3.5rem;
     --fs-h2: 3rem;
     --fs-h3: 1.8rem;
-    --fs-nav-logo: 2.1rem;
-    --fs-nav-links: 1.2rem;
     --fs-body: 1.2rem;
 
+}
+
+@media (max-width: 450px){
+    :root{
+        --fs-h1: 3rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 1.4rem;
+        --fs-body: 1rem;
+    }
 }
 
 *{
@@ -81,3 +92,91 @@ h1{
 #loli-page{
     display: none;
 }
+
+.loli-list-header{
+    color: var(--clr-light);
+    text-align: center;    
+    margin-top: 0.5em;
+}
+
+.loli-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--ff-go3);
+    color: var(--clr-strong-light);
+    width: 400px;
+    height: 527px;
+    margin: 20px 15px 20px 15px;
+    /* background-repeat: no-repeat; */
+
+}
+
+.card-bio{
+    padding: 10px;
+    background-color: var(--clr-primary-transparent);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header-loliname{
+    font-size: var(--fs-h3);
+}
+
+.card-header-loliclass{
+    font-size: var(--fs-h3);
+}
+
+.card-header-lolicategory{
+    color: var(--clr-light);
+    padding-bottom: 4px;
+}
+
+.card-stats{
+    color: var(--clr-light);
+}
+.card-stats-hp{
+    padding-left: 2px;
+    font-size: var(--fs-body);
+}
+/* .card-stats-attack{
+    color: var(--clr-secondary);
+}
+
+.card-stats-defence{
+    color: var(--clr-blue);
+}
+
+.card-stats-speed{
+    color: var(--clr-green);
+} */
+
+.card-moveset{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-move{
+    color: var(--clr-strong-light);
+    font-size: var(--fs-body);
+    /* background-color: transparent; */
+    font-family: var(--ff-go3);
+    cursor: pointer;
+    flex: 1;
+    min-width: 130px;
+    height: 40px;
+    margin: 2px;
+}
+
